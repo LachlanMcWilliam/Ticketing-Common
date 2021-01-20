@@ -22,3 +22,9 @@ __exportStar(require("./middleware/current-user"), exports);
 __exportStar(require("./middleware/error-handler"), exports);
 __exportStar(require("./middleware/require-auth"), exports);
 __exportStar(require("./middleware/validate-request"), exports);
+//Re-export event handlers
+__exportStar(require("./events/abstract-classes/abstract-listener"), exports);
+__exportStar(require("./events/abstract-classes/abstract-publisher"), exports);
+__exportStar(require("./events/enums/subjects"), exports);
+__exportStar(require("./events/interfaces/ticket-created-event"), exports);
+__exportStar(require("./events/interfaces/ticket-updated-event"), exports);
